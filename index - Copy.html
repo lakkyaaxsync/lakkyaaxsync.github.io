@@ -26,6 +26,15 @@
 	<!-- Add any other JavaScript files or scripts you need -->
 	<script src="path/to/your/custom.js"></script>
 	<!-- Add any other <script> tags here -->
+    <style>
+      /* Add this CSS for the handwritten font */
+      @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    
+      /* Add this CSS to apply the handwritten font to the review text */
+      .handwritten-font {
+        font-family: 'Patrick Hand', cursive;
+      }
+    </style>
 	<style>
 	.larger-char {
 		font-size: 13px;
@@ -74,50 +83,11 @@
 								<ul class="navbar-nav header-navbar-nav">
 									<li><a class="nav-link scroll" href="#wrapper">Home</a></li>
 									<li><a class="nav-link scroll" href="#about">About</a></li>
-									<li> <a class="nav-link scroll" href="#special">Special</a> </li>
 									<li><a class="nav-link scroll" href="menu-detailed.html">Menu</a></li>
 									<li> <a class="nav-link scroll" href="#services">Services</a> </li>
                   <li> <a class="nav-link scroll" href="#reservation">Bookings</a> </li>
-									<li><a class="nav-link scroll" href="#news">News</a></li>
-									<li class="dropdown"> <a href="javascript:;" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Pages<span class="dropdown-arrow ml-2"> </span>
-                      </a>
-										<ul class="dropdown-menu">
-											<li> <a class="dropdown-item" href="blog-full.html">Blog</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="blog-sidebar.html"
-                            >Blog Sidebar</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="blog-single.html"
-                            >Blog Single</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="contact.html"
-                            >Contact</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="reservation.html"
-                            >Reservation</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="menu-detailed.html"
-                            >Menu Detailed</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="gallery.html"
-                            >Look Book</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
+									<li><a class="nav-link scroll" href="#blog-full.html">Blog</a></li>
+
                     <li class="ml-lg-auto">
                       <a
                         class="nav-link nav-divider scroll"
@@ -134,6 +104,7 @@
                       /></a> </li>
 											<li> <a class="nav-link pr-0 pb-sm-4 pb-sm-0" href="index.html"><span class="fa fa-phone mr-3"></span>97404 59785</a
                       >
+                      
                     </li>
                   </ul>
                 </div>
@@ -465,7 +436,7 @@
                 <div class="bg-dark p-4 review-box">
                   <div class="border-light p-4 review-content">
                     <h4 class="h6 text-white font-alt text-uppercase">Siddharth Lal</h4>
-                    <p class="text-light review-text">
+                    <p class="text-light review-text handwritten-font">
                       "The food is low on salt, spices, and oil. There is enough choice available, but I usually go for the North Indian thali since it is similar to the food that is cooked at home."
                     </p>
                     <p class="review-rating">⭐⭐⭐⭐⭐</p>
@@ -476,7 +447,7 @@
                 <div class="bg-dark p-4 review-box">
                   <div class="border-light p-4 review-content">
                     <h4 class="h6 text-white font-alt text-uppercase">Vidyullatha Prakash</h4>
-                    <p class="text-light review-text">
+                    <p class="text-light review-text handwritten-font">
                       "We ordered many different items for my son's birthday party and all of them were super tasty and all the guests loved them. Jamoon was awesome and samosas as well!"
                     </p>
                     <p class="review-rating">⭐⭐⭐⭐⭐</p>
@@ -487,7 +458,7 @@
                 <div class="bg-dark p-4 review-box">
                   <div class="border-light p-4 review-content">
                     <h4 class="h6 text-white font-alt text-uppercase">K S Balachandar</h4>
-                    <p class="text-light review-text">
+                    <p class="text-light review-text handwritten-font">
                       "We ordered North Indian food from Bala's Home made food. The parathas, Starters, the sabji was very tasty and it was liked by all of our family members in the age group of 25 to 75."
                     </p>
                     <p class="review-rating">⭐⭐⭐⭐⭐</p>
@@ -498,7 +469,7 @@
                 <div class="bg-dark p-4 review-box">
                   <div class="border-light p-4 review-content">
                     <h4 class="h6 text-white font-alt text-uppercase">Aparna R</h4>
-                    <p class="text-light review-text">
+                    <p class="text-light review-text handwritten-font">
                       "She is the person I always call when we have parties or extra guests at home. My absolute favorites are her cutlets, pav bhaji and baby corn Manchurian."
                     </p>
                     <p class="review-rating">⭐⭐⭐⭐⭐</p>
@@ -517,7 +488,7 @@
 <!--End review section-->
 
 <style>
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 575px) {
     .review-box {
       height: 350px;
     }
@@ -533,7 +504,23 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    .review-box {
+      height: 275px;
+    }
+    .review-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .review-text {
+      height: 80px;
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
     .review-box {
       height: 275px;
     }
@@ -1128,8 +1115,7 @@
                 <span class="label-title mb-3">From The Blog</span>
                 <h1 class="h2 font-alt">Delicious Recipies</h1>
                 <p class="w-md-40 mb-0 mx-auto lead">
-                  Get ready to embark on a culinary journey filled with flavors,
-                  aromas, and irresistible dishes. Let's dive right in!
+                  We love to exchange our cherished recipes!
                 </p>
               </div>
             </div>
@@ -1153,7 +1139,7 @@
 								<div class="card-body d-flex flex-column">
 									<div class="d-flex justify-content-between mb-3">
 										<div class="small d-flex">
-											<div class="mr-2"> <a href="#">Dessert</a> </div> <span class="text-muted">20th March</span> </div> <span class="badge bg-secondary text-primary">
+											<div class="mr-2"> <a href="#">Salad</a> </div> <span class="text-muted">20th March</span> </div> <span class="badge bg-secondary text-primary">
                       <svg
                         version="1.1"
                         class="badge-icon"
@@ -1173,9 +1159,9 @@
                       24
                     </span> </div>
 									<h4 class="font-alt">
-                    <a href="">Chocolate Coconut Balls</a>
+                    <a href="">Indian Macroni Salad</a>
                   </h4>
-									<p class="flex-grow"> Web design require many different skills and disciplines in the production and maintenance of websites. </p>
+									<p class="flex-grow"> A Delicious Fusion: Indian-inspired macaroni salad with a flavorful twist of desi masalas.</p>
 									<div class="media align-items-center"> <img class="avatar-xs rounded-circle mr-2" src="assets/img/avatar/1.jpg" alt="" />
 										<div class="media-body"> <span class="small text-muted">By</span> <a class="small text-dark" href="#">Brijbala Sharma</a> </div>
 									</div>
@@ -1217,7 +1203,7 @@
 								<div class="card-body d-flex flex-column">
 									<div class="d-flex justify-content-between mb-3">
 										<div class="small d-flex">
-											<div class="mr-2"> <a href="#">Cooking</a> </div> <span class="text-muted">29th November</span> </div> <span class="badge bg-secondary text-primary">
+											<div class="mr-2"> <a href="#">Navratri</a> </div> <span class="text-muted">4th April</span> </div> <span class="badge bg-secondary text-primary">
                       <svg
                         version="1.1"
                         class="badge-icon"
@@ -1236,10 +1222,10 @@
                       </svg>
                       33
                     </span> </div>
-									<h4 class="font-alt"><a href="">Garlic Roasted Risoto</a></h4>
-									<p class="flex-grow"> Web design require many different skills and disciplines in the production and maintenance of websites. </p>
-									<div class="media align-items-center"> <img class="avatar-xs rounded-circle mr-2" src="assets/img/avatar/2.jpg" alt="" />
-										<div class="media-body"> <span class="small text-muted">By</span> <a class="small text-dark" href="#">Zakaria Kalal</a> </div>
+									<h4 class="font-alt"><a href="">Navratri Thali</a></h4>
+									<p class="flex-grow"> A delightful Navratri vrat thali, crafted without onion and garlic, offering a feast of pure flavors and sacred nourishment. </p>
+									<div class="media align-items-center"> <img class="avatar-xs rounded-circle mr-2" src="assets/img/avatar/1.jpg" alt="" />
+										<div class="media-body"> <span class="small text-muted">By</span> <a class="small text-dark" href="#">Brijbala Sharma</a> </div>
 									</div>
 								</div>
 							</div>
@@ -1289,40 +1275,44 @@
                   <li class="list-group-item">+91 97404 59785</li>
                   <li class="list-group-item">
                     <a href="mailto:customers@foxeresto.net"
-                      >brijbalasharma@gmail.com</a
+                      >brijbalas123@gmail.com</a
                     >
+                  </li>
+                  <li class="list-group-item">
+                    <a href="contact.html">Drop a message here!</a>
                   </li>
                   <li class="list-group-item">
                     RN Fort House, 12th Cross, Balaji Layout, Maruthi Layout,
                     Dasarahalli, Bengaluru, Karnataka 560024
                   </li>
+
                 </ul>
               </address> </div>
 							<div class="col-lg-3 col-sm-6 mb-4">
 								<h3 class="h6 text-white mb-3 font-size-15">Hours of Service</h3>
 								<div class="opening-hours-container font-size-14"> <span class="opening-hours-holder-inner">
                   <span class="opening-hours-day-holder">
-                    <span class="opening-hours-day">Monday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">10:00 - 22:00</span> </span>
+                    <span class="opening-hours-day">Monday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">09:00 - 21:00</span> </span>
 								</div>
 								<div class="opening-hours-container font-size-14"> <span class="opening-hours-holder-inner">
                   <span class="opening-hours-day-holder">
-                    <span class="opening-hours-day">Tuesday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">10:00 - 22:00</span> </span>
+                    <span class="opening-hours-day">Tuesday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">09:00 - 21:00</span> </span>
 								</div>
 								<div class="opening-hours-container font-size-14"> <span class="opening-hours-holder-inner">
                   <span class="opening-hours-day-holder">
-                    <span class="opening-hours-day">Wednesday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">10:00 - 22:00</span> </span>
+                    <span class="opening-hours-day">Wednesday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">09:00 - 21:00</span> </span>
 								</div>
 								<div class="opening-hours-container font-size-14"> <span class="opening-hours-holder-inner">
                   <span class="opening-hours-day-holder">
-                    <span class="opening-hours-day">Thursday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">10:00 - 22:00</span> </span>
+                    <span class="opening-hours-day">Thursday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">09:00 - 21:00</span> </span>
 								</div>
 								<div class="opening-hours-container font-size-14"> <span class="opening-hours-holder-inner">
                   <span class="opening-hours-day-holder">
-                    <span class="opening-hours-day">Friday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">09:00 - 02:30</span> </span>
+                    <span class="opening-hours-day">Friday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">09:00 - 21:00</span> </span>
 								</div>
 								<div class="opening-hours-container font-size-14"> <span class="opening-hours-holder-inner">
                   <span class="opening-hours-day-holder">
-                    <span class="opening-hours-day">Saturday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">09:00 - 02:30</span> </span>
+                    <span class="opening-hours-day">Saturday</span> </span> <span class="opening-hours-line"></span> <span class="opening-hours-time">09:00 - 22:00</span> </span>
 								</div>
 								<div class="opening-hours-container font-size-14"> <span class="opening-hours-holder-inner">
                   <span class="opening-hours-day-holder">
