@@ -54,7 +54,13 @@
     box-shadow: 0 0 10px silver;
   }
 </style>
-
+<style>
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
 
 </head>
 
@@ -76,44 +82,40 @@
 			<!--Header-->
 			<header class="header default">
 				<div class="header-section">
-					<!--Container-->
-					<div class="container-fluid">
-						<nav class="navbar navbar-expand-lg header-navbar">
-							<a class="navbar-brand navbar-logo scroll" href="#wrapper"> <img class="mb-0 logo-light" src="assets/svg/logo-light.svg" alt="" /> <img class="mb-0 logo-dark" src="assets/svg/logo-dark.svg" alt="" /> </a>
-							<button class="navbar-toggler btn-navbar-toggler" type="button" data-toggle="collapse" data-target=".nav-menu" aria-expanded="true" aria-label="Toggle navigation"> <span class="fa fa-bars"></span> </button>
-							<div class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end py-0">
-								<ul class="navbar-nav header-navbar-nav">
-									<li><a class="nav-link scroll" href="#wrapper">Home</a></li>
-									<li><a class="nav-link scroll" href="#about">About</a></li>
-									<li><a class="nav-link scroll" href="menu-detailed.html">Menu</a></li>
-									<li> <a class="nav-link scroll" href="#services">Services</a> </li>
-                  <li> <a class="nav-link scroll" href="#reservation">Bookings</a> </li>
-									<li><a class="nav-link scroll" href="blog-full.html">Blog</a></li>
-                  <li><a class="nav-link scroll" href="contact.html">Contact</a></li>
-
-
-                    <li class="ml-lg-auto">
-                      <a
-                        class="nav-link nav-divider scroll"
-                        href="#reservation"
-                      >
-                        <img
-                          src="assets/svg/ring-bell-light.svg"
-                          alt=""
-                          class="max-width-xsm bell-light" />
-                        <img
-                          src="assets/svg/ring-bell-dark.svg"
-                          alt=""
-                          class="max-width-xsm bell-dark"
-                      /></a> </li>
-											<li> <a class="nav-link pr-0 pb-sm-4 pb-sm-0" href="index.html"><span class="fa fa-phone mr-3"></span>97404 59785</a
-                      >
-                      
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
+ <!--Container-->
+ <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg header-navbar">
+    <a class="navbar-brand navbar-logo scroll" href="#index.html">
+      <img class="mb-0 logo-light" src="assets/svg/logo-light.svg" alt="" />
+      <img class="mb-0 logo-dark" src="assets/svg/logo-dark.svg" alt="" />
+    </a>
+    <button class="navbar-toggler btn-navbar-toggler" type="button" data-toggle="collapse" data-target=".nav-menu" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end py-0">
+      <ul class="navbar-nav header-navbar-nav">
+        <li><a class="nav-link scroll" href="#wrapper">Home</a></li>
+        <li><a class="nav-link scroll" href="#about">About</a></li>
+        <li><a class="nav-link scroll" href="menu-detailed.html">Menu</a></li>
+        <li><a class="nav-link scroll" href="#services">Services</a></li>
+        <li><a class="nav-link scroll" href="#reservation">Bookings</a></li>
+        <li><a class="nav-link scroll" href="blog-full.html">Blog</a></li>
+        <li><a class="nav-link scroll" href="contact.html">Contact</a></li>
+        <li class="ml-lg-auto">
+          <a class="nav-link nav-divider scroll" href="#reservation">
+            <img src="assets/svg/ring-bell-light.svg" alt="" class="max-width-xsm bell-light" />
+            <img src="assets/svg/ring-bell-dark.svg" alt="" class="max-width-xsm bell-dark" />
+          </a>
+        </li>
+        <li>
+          <a class="nav-link pr-0 pb-sm-4 pb-sm-0" href="index.html">
+            <span class="fa fa-phone mr-3"></span>97404 59785
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
             <!--End container-->
           </div>
         </header>
@@ -273,7 +275,7 @@
                        <div class="reservation-card-inner p-sm-6">
                           <img src="assets/svg/serving-dish.svg" alt="" class="max-width-lg mb-3">
                           <h1 class="h2 font-alt">Your Daily Fuel<br> for a Busy Life</h1>
-                          <p class="lead">Lunch, Dinner, Snacks, and Salads</p>
+                          <p class="lead">Lunch, Dinner, Snacks, Salads</p>
                           <a href="#reservation" class="btn btn-dark btn-primary btn-wide scroll">Book my Odrer <span class="larger-char">😋</span></a>
                        </div>
                     </div>
