@@ -7,7 +7,8 @@
 	<title>Bala's Home Kitchen</title>
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- Css -->
+
+	<!-- CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" />
@@ -18,49 +19,28 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<!-- Add any other CSS files or stylesheets you need -->
-	<link rel="stylesheet" href="path/to/your/custom.css" />
+
+	<link rel="stylesheet" href="css/custom.css" />
 	<!-- Add any other <meta>, <link>, or <style> tags here -->
+      <!-- Favicon-->
+  <link type="image/png" sizes="16x16" rel="icon" href="assets/favicon/favicon2.png">
+
 	<!-- Add the JavaScript link for Font Awesome -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
 	<!-- Add any other JavaScript files or scripts you need -->
 	<script src="path/to/your/custom.js"></script>
 	<!-- Add any other <script> tags here -->
-    <style>
+
+<style>
       /* Add this CSS for the handwritten font */
       @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
     
-      /* Add this CSS to apply the handwritten font to the review text */
-      .handwritten-font {
-        font-family: 'Sofia', cursive;
-        font-size: 16px;
-
-      }
+      
     </style>
-	<style>
-	.larger-char {
-		font-size: 13px;
-		/* Adjust the font size as per your preference */
-	}
-	</style>
 
-<style>
-  .bg-gray-translucent {
-    background-color: rgba(100, 100, 100, 0.273);
-  }
 
-  .border-silver-glaze {
-    border: 1px solid silver;
-    box-shadow: 0 0 10px silver;
-  }
-</style>
-<style>
-  .navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
 
 </head>
 
@@ -328,7 +308,7 @@
                         Creamy goodness of fresh fenugreek leaves, succulent green peas, and rich cream, bursting with flavors
                       </p>
                       <a
-                        href="#menu"
+                        href="menu-detailed.html"
                         class="font-size-11-5 text-uppercase font-weight-700 letter-spacing-medium scroll"
                         >view full menu</a
                       >
@@ -354,7 +334,7 @@
                         An assortment of cottage cheese and vegetables in a luxurious gravy of poppy seeds and cashews
                       </p>
                       <a
-                        href="#menu"
+                        href="menu-detailed.html"
                         class="font-size-11-5 text-uppercase font-weight-700 letter-spacing-medium scroll"
                         >view full menu</a
                       >
@@ -380,7 +360,7 @@
                         Tender red kidney beans simmered in a flavorful spiced tomato gravy paired with fragrant Basmati rice 
                       </p>
                       <a
-                        href="#menu"
+                        href="menu-detailed.html"
                         class="font-size-11-5 text-uppercase font-weight-700 letter-spacing-medium scroll"
                         >view full menu</a
                       >
@@ -406,7 +386,7 @@
                         Crunch of crispy okra paired with the heavenly sweetness of caramelized onions with a unique smoky flavor
                       </p>
                       <a
-                        href="#menu"
+                        href="menu-detailed.html"
                         class="font-size-11-5 text-uppercase font-weight-700 letter-spacing-medium scroll"
                         >view full menu</a
                       >
@@ -467,7 +447,7 @@
                   <div class="border-light p-4 review-content">
                     <h4 class="h6 text-white font-alt text-uppercase">K S Balachandar</h4>
                     <p class="text-light review-text handwritten-font">
-                      "We ordered North Indian food from Bala's Home made food. The parathas, Starters, the sabji was very tasty and it was liked by all of our family members in the age group of 25 to 75."
+                      "We ordered North Indian food from Bala's Home made food. The parathas, Starters, the sabji was very tasty and it was liked by all of our family members."
                     </p>
                     <p class="review-rating">⭐⭐⭐⭐⭐</p>
                   </div>
@@ -498,7 +478,7 @@
 <style>
   @media screen and (max-width: 575px) {
     .review-box {
-      height: 350px;
+      height: 400px;
     }
     .review-content {
       height: 100%;
@@ -778,10 +758,13 @@
 <div class="container">
    <!--Row-->
    <div class="row">
-     <div class="col d-flex justify-content-center text-center" style="padding-top: 60px;"> <!-- Added text-center class -->
-       <button class="btn btn-primary" >See what's on menu <span class="larger-char">😋</span></button> <!-- Added inline style for padding-top -->
-     </div>
-   </div>
+    <div class="col d-flex justify-content-center text-center" style="padding-top: 60px;">
+      <a href="menu-detailed.html"> <!-- Replace "full-menu.html" with the actual URL you want to link to -->
+        <button class="btn btn-primary">View full menu <span class="larger-char">😋</span></button>
+      </a>
+    </div>
+  </div>
+  
    <!--End row-->
  </div>
  <!--End container-->
@@ -790,6 +773,23 @@
       <!--End menu section-->
       <!--Gallery section-->
       <section id="gallery" class="bg-secondary spacer-double-lg">
+                <!--Container-->
+                <div class="container">
+                  <!--Row-->
+                  <div class="row justify-content-center">
+                    <div class="col">
+                      <div class="mb-5 pb-5 text-center">
+                        <span class="label-title mb-3">Gallery</span>
+                        <h1 class="h2 font-alt">See what's cooking?</h1>
+                        <p class="w-md-40 mb-0 mx-auto lead">
+                          We cook more than just food. It's an amalgamation of flavors, aromas, colors, textures, and style.  
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End row-->
+                </div>
+                <!--End container-->
         <!--Container-->
         <div class="container">
           <!--Row-->
@@ -876,7 +876,7 @@
 					<!--Row-->
 					<div class="row justify-content-center text-center">
 						<div class="col-md-auto">
-							<div class="pt-5 mt-5"> <a href="#" class="btn btn-dark btn-primary btn-wide">See what's on menu <span class="larger-char">😋</span></a
+							<div class="pt-5 mt-5"> <a href="menu-detailed.html" class="btn btn-dark btn-primary btn-wide">View full menu <span class="larger-char">😋</span></a
                 >
               </div>
             </div>
@@ -992,9 +992,9 @@
         <div class="p-5 p-sm-5">
           <div class="mb-5 pb-5 text-left">
             <span class="label-title mb-3">Order Bookings</span>
-            <div id="typing-text-wrapper" style="height: 60px; overflow: hidden;">
-              <h2 id="dynamicform" class="h3 font-alt mb-3"></h2>
-            </div>
+              <div id="typing-text-wrapper" style="height: 60px; overflow: hidden;">
+                <h2 id="dynamicform" class="h3 font-alt mb-3"></h2>
+              </div>
             <p class="w-md-75 mb-0 lead">
               Interested in making a booking? 😍
               <br>Kindly fill out this form, and we will promptly get in touch with you. 
@@ -1169,7 +1169,7 @@
 									<h4 class="font-alt">
                     <a href="">Indian Macroni Salad</a>
                   </h4>
-									<p class="flex-grow"> A Delicious Fusion: Indian-inspired macaroni salad with a flavorful twist of desi masalas.</p>
+									<p class="flex-grow"> Indian-inspired macaroni salad with loads of fresh vegetables and a rich dressing of creamy yogurt in mild spices.</p>
 									<div class="media align-items-center"> <img class="avatar-xs rounded-circle mr-2" src="assets/img/avatar/1.jpg" alt="" />
 										<div class="media-body"> <span class="small text-muted">By</span> <a class="small text-dark" href="#">Brijbala Sharma</a> </div>
 									</div>
@@ -1243,7 +1243,7 @@
 					<!--Row-->
 					<div class="row justify-content-center">
 						<div class="col-xl-12">
-							<div class="text-center mt-5 pt-5"> <a href="blog-full.html" class="btn btn-secondary btn-wide">All Blog Posts</a
+							<div class="text-center mt-5 pt-5"> <a href="index.html#reservation" class="btn btn-secondary btn-wide">Book an order<span class="larger-char">😋</span></a
                 >
               </div>
             </div>
@@ -1341,7 +1341,7 @@
 								<h3 class="h6 text-white mb-3 font-size-15">Online Stores</h3>
 								<p>Rated 4.9 ⭐ on <a href="https://goo.gl/maps/ccLcQkz56457vLKJ7" target="_blank">Google</a> (50 reviews)
 									<br>Rated 4.3 ⭐ on <a href="https://www.swiggy.com/restaurants/balas-homemade-foods-maruthi-layout-hebbal-bangalore-391363" target="_blank">Swiggy</a> (100 reviews)
-									<br>Rated 4.0 ⭐ on <a href="https://www.zomato.com/bangalore/balas-homemade-food-hebbal-bangalore" target="_blank">Zomato</a> (66 reviews)
+									<br>Rated 4.0 ⭐ on <a href="https://www.zomato.com/bangalore/balas-homemade-food-hebbal-bangalore" target="_blank">Zomato</a> (71 reviews)
 									<br>Rated 4.0 ⭐ on <a href="https://restaurant-guru.in/Balas-Homemade-Food-Bengaluru" target="_blank">Restaurant Guru</a></p>
 							</div>
 						</div>
@@ -1382,7 +1382,7 @@
 				<script src="js/script.js"></script>
         				<!-- Dynamic Form -->
                 <script>
-                  const texts = ['Daily Meal Box?', 'Corporate Luncheon?', 'Birthday Celebration?', 'Anniversary Dinner?'];
+                  const texts = ['Daily Meal Box?', 'Corporate Lunch?', 'Birthday Celebration?', 'Anniversary Dinner?'];
                   const slow =70;
       const pause = 800; // <--- the longer delay between text direction changes
       
